@@ -25,8 +25,4 @@ public class ClientStorage {
         return null;
     }
 
-    public void clear() {
-        clients.clear();
-        idCounter = 1;
-    }
 }

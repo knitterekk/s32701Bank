@@ -19,7 +19,7 @@ public class BankService {
         if (client == null) {
             return new TransactionResult(TransactionStatus.DECLINED, 0.0);
         }
-        if(client.getBalance() < amount) {
+        if (client.getBalance() < amount) {
             return new TransactionResult(TransactionStatus.DECLINED, client.getBalance());
         }
 
@@ -28,7 +28,7 @@ public class BankService {
         return new TransactionResult(TransactionStatus.ACCEPTED, newBalance);
     }
 
-    public TransactionResult deposit(int clientId,double amount) {
+    public TransactionResult deposit(int clientId, double amount) {
         Client client = clientStorage.getClientById(clientId);
 
         if (client == null) {

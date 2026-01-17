@@ -7,8 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class s32701Bank {
 
 
-    public s32701Bank(BankService bankService) {
-
+    public s32701Bank() {
 
 
     }
